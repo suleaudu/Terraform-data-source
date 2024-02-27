@@ -19,5 +19,5 @@ data "aws-instance" "myawsinstance" {
     depends_on = [aws_instance.web-ec2]
 }
 output "myinstanceIP" {
-    value = data.awsinstance.public-ip
+    value = data.awsinstance.public_ip
 }
